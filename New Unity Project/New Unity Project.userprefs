@@ -1,11 +1,8 @@
 ﻿<Properties>
   <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
-  <MonoDevelop.Ide.Workbench ActiveDocument="..\Scripts\WaterCollision.js">
+  <MonoDevelop.Ide.Workbench ActiveDocument="Assets\Rebirth.js">
     <Files>
-      <File FileName="..\Scripts\WaterCollision.js" Line="11" Column="10" />
-      <File FileName="..\Scripts\ThirdPersonController.js" Line="167" Column="12" />
-      <File FileName="..\Scripts\Movement\MovementMotor.js" Line="1" Column="1" />
-      <File FileName="..\Scripts\ThirdPersonStatus.js" Line="24" Column="2" />
+      <File FileName="Assets\Rebirth.js" Line="19" Column="21" />
     </Files>
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.DebuggingService.Breakpoints>

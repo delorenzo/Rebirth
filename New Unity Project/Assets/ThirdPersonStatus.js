@@ -1,8 +1,3 @@
-// ThirdPersonStatus: Handles the player's state machine.
-
-// Keeps track of inventory, health, lives, etc.
-
-
 
 // sound effects.
 var struckSound: AudioClip;
