@@ -1,7 +1,7 @@
 
 function OnTriggerEnter (other : Collider)
 {
-	//Kill player if he fell in the water
+	//Kill player if she falls in the water
 	if (other.GetComponent (ThirdPersonStatus))
 	{
 		other.GetComponent (ThirdPersonStatus).WaterCollision();
