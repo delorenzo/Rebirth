@@ -11,14 +11,14 @@ public class Age : MonoBehaviour{
 	public GameObject currentObject, old;
 	public void DoAge () {
 		
-		index = Mathf.Repeat((float)index, objects.Length);
+		index = (int)Mathf.Repeat((float)index, objects.Length);
 		if (index == 4) {
 			//animation for elder -> egg	
 		}
 		if (currentObject != null)  {
 			old = currentObject;
 			Destroy(currentObject);
-			currentObject = Instantiate(objects[index], old.transform.position, old.transform.rotation);
+			currentObject = (GameObject)Instantiate(objects[index], old.transform.position, old.transform.rotation);
 		}
 	}
 	
