@@ -15,17 +15,10 @@ public class Age : MonoBehaviour{
 		if (index == 4) {
 			//animation for elder -> egg	
 		}
-		for (int i = 0; i < 5; i++) {
-			if (i == index) {
-				GameObject.Find("3rd Person Controller " + i).renderer.enabled = true;
-				GameObject.Find("3rd Person Controller " + i).transform.position = this.transform.position;
-				GameObject.Find("3rd Person Controller " + i).transform.rotation = this.transform.rotation;
-			}
-			else {
-				GameObject.Find("3rd Person Controller " + i).renderer.enabled = false;
-				
-			}
-			
+		if (currentObject != null)  {
+			old = currentObject;
+			Destroy(currentObject);
+			currentObject = (GameObject)Instantiate(objects[index], old.transform.position, old.transform.rotation);
 		}
 	}
 	

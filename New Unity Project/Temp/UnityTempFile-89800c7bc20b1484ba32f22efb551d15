@@ -1,0 +1,78 @@
+-debug
+-target:library
+-i:UnityEngine
+-i:System.Collections
+-base:UnityEngine.MonoBehaviour
+-nowarn:BCW0016
+-nowarn:BCW0003
+-method:Main
+-out:Temp/Assembly-UnityScript.dll
+-x-type-inference-rule-attribute:UnityEngineInternal.TypeInferenceRuleAttribute
+-define:UNITY_STANDALONE
+-define:ENABLE_MICROPHONE
+-define:ENABLE_IMAGEEFFECTS
+-define:ENABLE_WEBCAM
+-define:ENABLE_AUDIO_FMOD
+-define:ENABLE_NETWORK
+-define:ENABLE_MONO
+-define:ENABLE_PHYSICS
+-define:ENABLE_TERRAIN
+-define:ENABLE_CACHING
+-define:ENABLE_SUBSTANCE
+-define:ENABLE_GENERICS
+-define:ENABLE_CLOTH
+-define:ENABLE_MOVIES
+-define:ENABLE_AUDIO
+-define:ENABLE_WWW
+-define:ENABLE_SHADOWS
+-define:ENABLE_DUCK_TYPING
+-define:UNITY_4_0_1
+-define:UNITY_4_0
+-define:UNITY_STANDALONE_WIN
+-define:ENABLE_PROFILER
+-define:UNITY_EDITOR
+-r:"C:/Program Files (x86)/Unity/Editor/Data/Managed/UnityEngine.dll"
+-r:Library/ScriptAssemblies/Assembly-CSharp-firstpass.dll
+-r:Library/ScriptAssemblies/Assembly-UnityScript-firstpass.dll
+-r:"C:/Program Files (x86)/Unity/Editor/Data/Managed/UnityEditor.dll"
+-i:UnityEditor
+"Assets/3D Platformer Tutorial/Scripts/Camera/FadeoutLineOfSight.js"
+"Assets/3D Platformer Tutorial/Scripts/Camera/OrbitCamera.js"
+"Assets/3D Platformer Tutorial/Scripts/Camera/SmoothFollowCamera.js"
+"Assets/3D Platformer Tutorial/Scripts/Camera/SmoothLookAt.js"
+"Assets/3D Platformer Tutorial/Scripts/Camera/SpringFollowCamera.js"
+"Assets/3D Platformer Tutorial/Scripts/Enemies/EnemyDamage.js"
+"Assets/3D Platformer Tutorial/Scripts/Enemies/EnemyPoliceGuy.js"
+"Assets/3D Platformer Tutorial/Scripts/Enemies/EnemyRespawn.js"
+"Assets/3D Platformer Tutorial/Scripts/Enemies/LaserTrap.js"
+"Assets/3D Platformer Tutorial/Scripts/GUI/FPS.js"
+"Assets/3D Platformer Tutorial/Scripts/GUI/GameHUD.js"
+"Assets/3D Platformer Tutorial/Scripts/Misc/DroppableMover.js"
+"Assets/3D Platformer Tutorial/Scripts/Misc/FenceTextureOffset.js"
+"Assets/3D Platformer Tutorial/Scripts/Misc/FuelCellGlowLookAt.js"
+"Assets/3D Platformer Tutorial/Scripts/Misc/Jumppad.js"
+"Assets/3D Platformer Tutorial/Scripts/Misc/LevelStatus.js"
+"Assets/3D Platformer Tutorial/Scripts/Misc/ObjectRotator.js"
+"Assets/3D Platformer Tutorial/Scripts/Misc/OneShotParticles.js"
+"Assets/3D Platformer Tutorial/Scripts/Misc/Pickup.js"
+"Assets/3D Platformer Tutorial/Scripts/Misc/Respawn.js"
+"Assets/3D Platformer Tutorial/Scripts/Player/FalloutDeath.js"
+"Assets/3D Platformer Tutorial/Scripts/Player/JetPackParticleController.js"
+"Assets/3D Platformer Tutorial/Scripts/Player/ThirdPersonCharacterAttack.js"
+"Assets/3D Platformer Tutorial/Scripts/Player/ThirdPersonController.js"
+"Assets/3D Platformer Tutorial/Scripts/Player/ThirdPersonPlayerAnimation.js"
+"Assets/3D Platformer Tutorial/Scripts/Player/ThirdPersonPushBodies.js"
+"Assets/3D Platformer Tutorial/Scripts/Player/ThirdPersonStatus.js"
+"Assets/3D Platformer Tutorial/Scripts/WaterCollision.js"
+"Assets/Standard Assets (Mobile)/Scripts/CameraRelativeControl.js"
+"Assets/Standard Assets (Mobile)/Scripts/FirstPersonControl.js"
+"Assets/Standard Assets (Mobile)/Scripts/FollowTransform.js"
+"Assets/Standard Assets (Mobile)/Scripts/Joystick.js"
+"Assets/Standard Assets (Mobile)/Scripts/ObliqueNear.js"
+"Assets/Standard Assets (Mobile)/Scripts/PlayerRelativeControl.js"
+"Assets/Standard Assets (Mobile)/Scripts/RollABall.js"
+"Assets/Standard Assets (Mobile)/Scripts/RotationConstraint.js"
+"Assets/Standard Assets (Mobile)/Scripts/SidescrollControl.js"
+"Assets/Standard Assets (Mobile)/Scripts/SmoothFollow2D.js"
+"Assets/Standard Assets (Mobile)/Scripts/ZoomCamera.js"
+"Assets/Standard Assets (Mobile)/Scripts/tapcontrol.js"
