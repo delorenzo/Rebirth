@@ -6,7 +6,7 @@
 
 // sound effects.
 var struckSound: AudioClip;
-
+var health:  int;
 function Awake()
 {
 	
@@ -31,7 +31,7 @@ function ApplyDamage (damage : int)
 	health -= damage;
 	if (health <= 0)
 	{
-		SendMessage("Die");
+		Rebirth();
 	}
 }
 
