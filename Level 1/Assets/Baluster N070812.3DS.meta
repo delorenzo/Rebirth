@@ -1,0 +1,137 @@
+fileFormatVersion: 2
+guid: 5a14872a7c2fe0f4fb2c4d626e771662
+ModelImporter:
+  serializedVersion: 15
+  fileIDToRecycleName:
+    100000: baliasina0
+    100002: baliasina1
+    100004: //RootNode
+    100006: Box27
+    100008: Box28
+    100010: Box29
+    100012: Box30
+    100014: Box81
+    100016: Box82
+    100018: Line14
+    100020: Line15
+    100022: Line45
+    100024: Line46
+    100026: Line54
+    100028: Line55
+    100030: Line56
+    100032: Sphere04
+    100034: Sphere05
+    100036: ugol03
+    100038: ugol04
+    400000: baliasina0
+    400002: baliasina1
+    400004: //RootNode
+    400006: Box27
+    400008: Box28
+    400010: Box29
+    400012: Box30
+    400014: Box81
+    400016: Box82
+    400018: Line14
+    400020: Line15
+    400022: Line45
+    400024: Line46
+    400026: Line54
+    400028: Line55
+    400030: Line56
+    400032: Sphere04
+    400034: Sphere05
+    400036: ugol03
+    400038: ugol04
+    2300000: Box27
+    2300002: Box28
+    2300004: Box29
+    2300006: Box30
+    2300008: Box81
+    2300010: Box82
+    2300012: Line14
+    2300014: Line15
+    2300016: Line45
+    2300018: Line46
+    2300020: Line54
+    2300022: Line55
+    2300024: Line56
+    2300026: Sphere04
+    2300028: Sphere05
+    3300000: Box27
+    3300002: Box28
+    3300004: Box29
+    3300006: Box30
+    3300008: Box81
+    3300010: Box82
+    3300012: Line14
+    3300014: Line15
+    3300016: Line45
+    3300018: Line46
+    3300020: Line54
+    3300022: Line55
+    3300024: Line56
+    3300026: Sphere04
+    3300028: Sphere05
+    4300000: Line54
+    4300002: Sphere04
+    4300004: Line45
+    4300006: Line46
+    4300008: Box81
+    4300010: Box29
+    4300012: Line15
+    4300014: Box30
+    4300016: Box27
+    4300018: Box28
+    4300020: Line14
+    9500000: //RootNode
+  materials:
+    importMaterials: 1
+    materialName: 0
+    materialSearch: 1
+  animations:
+    legacyGenerateAnimations: 4
+    bakeSimulation: 0
+    animationCompression: 1
+    animationRotationError: .5
+    animationPositionError: .5
+    animationScaleError: .5
+    animationWrapMode: 0
+    clipAnimations: []
+    isReadable: 1
+  meshes:
+    lODScreenPercentages: []
+    globalScale: .100000001
+    meshCompression: 0
+    addColliders: 0
+    swapUVChannels: 0
+    generateSecondaryUV: 0
+    useFileUnits: 1
+    optimizeMeshForGPU: 1
+    secondaryUVAngleDistortion: 8
+    secondaryUVAreaDistortion: 15.000001
+    secondaryUVHardAngle: 88
+    secondaryUVPackMargin: 4
+  tangentSpace:
+    normalSmoothAngle: 60
+    splitTangentsAcrossUV: 1
+    normalImportMode: 0
+    tangentImportMode: 1
+  importAnimation: 1
+  copyAvatar: 0
+  humanDescription:
+    human: []
+    skeleton: []
+    handles: []
+    armTwist: .5
+    foreArmTwist: .5
+    upperLegTwist: .5
+    legTwist: .5
+    armStretch: .0500000007
+    legStretch: .0500000007
+    feetSpacing: 0
+    rootMotionBoneName: 
+  lastHumanDescriptionAvatarSource: {instanceID: 0}
+  additionalBone: 1
+  animationType: 2
+  userData: 
