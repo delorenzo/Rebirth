@@ -1,8 +1,10 @@
 ﻿<Properties>
   <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
-  <MonoDevelop.Ide.Workbench ActiveDocument="Assets\Rebirth.js">
+  <MonoDevelop.Ide.Workbench ActiveDocument="Assets\ThirdPersonStatus.js">
     <Files>
-      <File FileName="Assets\Rebirth.js" Line="19" Column="21" />
+      <File FileName="Assets\ThirdPersonController.js" Line="286" Column="18" />
+      <File FileName="Assets\Rebirth.js" Line="7" Column="32" />
+      <File FileName="Assets\ThirdPersonStatus.js" Line="8" Column="1" />
     </Files>
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.DebuggingService.Breakpoints>
