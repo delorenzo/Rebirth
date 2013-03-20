@@ -1,0 +1,23 @@
+# Wavefront material library
+# Tue Aug 03 08:00:55 1999
+# Created with Viewpoint Interchange www.viewpoint.com
+
+newmtl rsnk_iris
+  Ka 0 0 0
+  Kd 0 0 0
+  Ks 0 0 0
+  illum 2
+  map_Kd images\eye_a1.TIF
+
+newmtl rsnk_skin
+  Ka 0 0 0
+  Kd 0 0 0
+  Ks 0 0 0
+  illum 2
+  map_Kd images\rattler.tif
+
+newmtl rsnk_fang
+  Ka 0 0 0
+  Kd 1 1 0.921569
+  Ks 1 1 0.921569
+  illum 2

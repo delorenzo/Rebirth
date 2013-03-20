@@ -1,0 +1,16 @@
+# Wavefront material library
+# Tue Aug 03 07:52:18 1999
+# Created with Viewpoint Interchange www.viewpoint.com
+
+newmtl sknk_body
+  Ka 0 0 0
+  Kd 0 0 0
+  Ks 0 0 0
+  illum 2
+  map_Kd images\skunk.TIF
+
+newmtl sknk_eye
+  Ka 0 0 0
+  Kd 0.0901961 0.0823529 0.117647
+  Ks 0.0901961 0.0823529 0.117647
+  illum 2

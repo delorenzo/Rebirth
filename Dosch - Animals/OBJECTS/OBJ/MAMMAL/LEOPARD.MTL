@@ -1,0 +1,36 @@
+# Wavefront material library
+# Tue Aug 03 07:51:16 1999
+# Created with Viewpoint Interchange www.viewpoint.com
+
+newmtl lprd_body
+  Ka 0 0 0
+  Kd 0 0 0
+  Ks 0 0 0
+  illum 2
+  map_Kd images\leopard.TIF
+
+newmtl lprd_vibrissa
+  Ka 0 0 0
+  Kd 0.784314 0.784314 0.784314
+  Ks 0.784314 0.784314 0.784314
+  illum 2
+
+newmtl lprd_rIris
+  Ka 0 0 0
+  Kd 0 0 0
+  Ks 0 0 0
+  illum 2
+  map_Kd images\eye_a5.tif
+
+newmtl lprd_eye
+  Ka 0 0 0
+  Kd 1 0.988235 0.941176
+  Ks 1 0.988235 0.941176
+  illum 2
+
+newmtl lprd_lIris
+  Ka 0 0 0
+  Kd 0 0 0
+  Ks 0 0 0
+  illum 2
+  map_Kd images\eye_a5.tif

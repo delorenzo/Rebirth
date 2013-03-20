@@ -1,0 +1,16 @@
+# Wavefront material library
+# Tue Aug 03 07:52:21 1999
+# Created with Viewpoint Interchange www.viewpoint.com
+
+newmtl sqg_body
+  Ka 0 0 0
+  Kd 0 0 0
+  Ks 0 0 0
+  illum 2
+  map_Kd images\squirl_g.TIF
+
+newmtl sqg_eye
+  Ka 0 0 0
+  Kd 0.0941176 0.0784314 0.121569
+  Ks 0.0941176 0.0784314 0.121569
+  illum 2

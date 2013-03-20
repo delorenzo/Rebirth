@@ -1,0 +1,30 @@
+# Wavefront material library
+# Tue Aug 03 07:50:04 1999
+# Created with Viewpoint Interchange www.viewpoint.com
+
+newmtl dob_body
+  Ka 0 0 0
+  Kd 0 0 0
+  Ks 0 0 0
+  illum 2
+  map_Kd images\doberman.tif
+
+newmtl dob_rIris
+  Ka 0 0 0
+  Kd 0 0 0
+  Ks 0 0 0
+  illum 2
+  map_Kd images\eye_brn2.TIF
+
+newmtl dob_eye
+  Ka 0 0 0
+  Kd 1 0.988235 0.941176
+  Ks 1 0.988235 0.941176
+  illum 2
+
+newmtl dob_lIris
+  Ka 0 0 0
+  Kd 0 0 0
+  Ks 0 0 0
+  illum 2
+  map_Kd images\eye_brn2.TIF

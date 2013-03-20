@@ -1,0 +1,28 @@
+# Wavefront material library
+# Tue Aug 03 07:52:38 1999
+# Created with Viewpoint Interchange www.viewpoint.com
+
+newmtl wal_body
+  Ka 0 0 0
+  Kd 0 0 0
+  Ks 0 0 0
+  illum 2
+  map_Kd images\Walrus.TIF
+
+newmtl wal_tusk
+  Ka 0 0 0
+  Kd 0.870588 0.827451 0.764706
+  Ks 0.870588 0.827451 0.764706
+  illum 2
+
+newmtl wal_eye
+  Ka 0 0 0
+  Kd 0.0156863 0.0431373 0.0196078
+  Ks 0.0156863 0.0431373 0.0196078
+  illum 2
+
+newmtl wal_vibrissa
+  Ka 0 0 0
+  Kd 0.784314 0.784314 0.784314
+  Ks 0.784314 0.784314 0.784314
+  illum 2

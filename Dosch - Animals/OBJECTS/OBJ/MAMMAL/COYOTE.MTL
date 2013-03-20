@@ -1,0 +1,30 @@
+# Wavefront material library
+# Tue Aug 03 07:49:51 1999
+# Created with Viewpoint Interchange www.viewpoint.com
+
+newmtl cyot_body
+  Ka 0 0 0
+  Kd 0 0 0
+  Ks 0 0 0
+  illum 2
+  map_Kd images\coyote.tif
+
+newmtl cyot_rIris
+  Ka 0 0 0
+  Kd 0 0 0
+  Ks 0 0 0
+  illum 2
+  map_Kd images\eye_hzl.tif
+
+newmtl cyot_eye
+  Ka 0 0 0
+  Kd 1 0.988235 0.941176
+  Ks 1 0.988235 0.941176
+  illum 2
+
+newmtl cyot_lIris
+  Ka 0 0 0
+  Kd 0 0 0
+  Ks 0 0 0
+  illum 2
+  map_Kd images\eye_hzl.tif

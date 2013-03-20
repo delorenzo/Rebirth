@@ -1,0 +1,17 @@
+# Wavefront material library
+# Tue Aug 03 07:57:08 1999
+# Created with Viewpoint Interchange www.viewpoint.com
+
+newmtl dei_body
+  Ka 0 0 0
+  Kd 0 0 0
+  Ks 0 0 0
+  illum 2
+  map_Kd images\deinonyc.TIF
+
+newmtl dei_iris
+  Ka 0 0 0
+  Kd 0 0 0
+  Ks 0 0 0
+  illum 2
+  map_Kd images\eye_a1.TIF

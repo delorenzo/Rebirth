@@ -1,0 +1,23 @@
+# Wavefront material library
+# Tue Aug 03 07:57:02 1999
+# Created with Viewpoint Interchange www.viewpoint.com
+
+newmtl baro_body
+  Ka 0 0 0
+  Kd 0 0 0
+  Ks 0 0 0
+  illum 2
+  map_Kd images\barosaur.tif
+
+newmtl baro_iris
+  Ka 0 0 0
+  Kd 0 0 0
+  Ks 0 0 0
+  illum 2
+  map_Kd images\eye_hzl.tif
+
+newmtl baro_eye
+  Ka 0 0 0
+  Kd 0.392157 0.352941 0.352941
+  Ks 0.392157 0.352941 0.352941
+  illum 2

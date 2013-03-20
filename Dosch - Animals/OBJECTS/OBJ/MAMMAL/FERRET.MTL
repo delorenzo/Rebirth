@@ -1,0 +1,16 @@
+# Wavefront material library
+# Tue Aug 03 07:50:32 1999
+# Created with Viewpoint Interchange www.viewpoint.com
+
+newmtl fer_body
+  Ka 0 0 0
+  Kd 0 0 0
+  Ks 0 0 0
+  illum 2
+  map_Kd images\ferret.TIF
+
+newmtl fer_eye
+  Ka 0 0 0
+  Kd 0.101961 0.0901961 0.0745098
+  Ks 0.101961 0.0901961 0.0745098
+  illum 2
