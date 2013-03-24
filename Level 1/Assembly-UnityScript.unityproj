@@ -72,6 +72,7 @@
      <Compile Include="Assets\3D Platformer Tutorial\Scripts\Player\ThirdPersonPushBodies.js" />
      <Compile Include="Assets\3D Platformer Tutorial\Scripts\Player\ThirdPersonStatus.js" />
      <Compile Include="Assets\3D Platformer Tutorial\Scripts\WaterCollision.js" />
+     <Compile Include="Assets\Rebirth.js" />
      <Compile Include="Assets\Standard Assets (Mobile)\Scripts\CameraRelativeControl.js" />
      <Compile Include="Assets\Standard Assets (Mobile)\Scripts\FirstPersonControl.js" />
      <Compile Include="Assets\Standard Assets (Mobile)\Scripts\FollowTransform.js" />
