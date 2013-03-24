@@ -17,7 +17,7 @@ public class Age : MonoBehaviour{
 			if (Player[i].activeSelf) { 
 				obj = Player[i];
 				obj.SetActive(false);
-				nextindex = (i + 1) % 5;
+				nextindex = i % 4 + 1;
 				Player[nextindex].transform.position = Player[i].transform.position;
 				Player[nextindex].transform.position += temp;
 				Player[nextindex].SetActive(true);
