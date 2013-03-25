@@ -45,8 +45,8 @@
   </ItemGroup>
   <ItemGroup>
      <Compile Include="Assets\3D Platformer Tutorial\Phoenix\Ability.cs" />
-     <Compile Include="Assets\Age.cs" />
-     <Compile Include="Assets\Rebirth.cs" />
+     <Compile Include="Assets\3D Platformer Tutorial\Scripts\Age.cs" />
+     <Compile Include="Assets\3D Platformer Tutorial\Scripts\Rebirth.cs" />
      <Compile Include="Assets\WaterCollision.cs" />
      <None Include="Assets\Standard Assets\Projectors\Guidelines.txt" />
      <None Include="Assets\Standard Assets (Mobile)\Shaders\Particle Shaders\Mobile Multiply Culled.shader" />
