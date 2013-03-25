@@ -7,12 +7,12 @@ public class Rebirth : MonoBehaviour {
 
 	void Update () {
 		if (Input.GetKeyDown("r")) {
-			for (var i = 1; i < 5; i++) {
+			for (var i = 2; i < 5; i++) {
 				if (Player[i].activeSelf) { 
 					obj = Player[i];
 					obj.SetActive(false);
-					Player[0].transform.position = Player[i].transform.position;
-					Player[0].SetActive(true);
+					Player[1].transform.position = Player[i].transform.position;
+					Player[1].SetActive(true);
 					break;
 				}
 			}
