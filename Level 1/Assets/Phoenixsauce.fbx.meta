@@ -1,0 +1,124 @@
+fileFormatVersion: 2
+guid: 73fa81d106614f04ebded87058e6649f
+ModelImporter:
+  serializedVersion: 15
+  fileIDToRecycleName:
+    100000: phoenix_lowpoly:ankle_l
+    100002: phoenix_lowpoly:ankle_r
+    100004: phoenix_lowpoly:back_root
+    100006: phoenix_lowpoly:ball_l
+    100008: phoenix_lowpoly:ball_r
+    100010: phoenix_lowpoly:beak
+    100012: phoenix_lowpoly:butt
+    100014: phoenix_lowpoly:crown
+    100016: phoenix_lowpoly:elbow_l
+    100018: phoenix_lowpoly:elbow_r
+    100020: phoenix_lowpoly:group
+    100022: phoenix_lowpoly:head
+    100024: phoenix_lowpoly:hip_l
+    100026: phoenix_lowpoly:hip_r
+    100028: phoenix_lowpoly:knee_l
+    100030: phoenix_lowpoly:knee_r
+    100032: phoenix_lowpoly:polySurface10
+    100034: phoenix_lowpoly:shoulder_l
+    100036: phoenix_lowpoly:shoulder_r
+    100038: phoenix_lowpoly:spine_high
+    100040: phoenix_lowpoly:spine_low
+    100042: phoenix_lowpoly:spine_mid
+    100044: phoenix_lowpoly:tail_end
+    100046: phoenix_lowpoly:tail_mid
+    100048: phoenix_lowpoly:tail_start
+    100050: phoenix_lowpoly:thumb_l
+    100052: phoenix_lowpoly:thumb_r
+    100054: phoenix_lowpoly:toe_l
+    100056: phoenix_lowpoly:toe_r
+    100058: phoenix_lowpoly:wrist_l
+    100060: phoenix_lowpoly:wrist_r
+    100062: //RootNode
+    400000: phoenix_lowpoly:ankle_l
+    400002: phoenix_lowpoly:ankle_r
+    400004: phoenix_lowpoly:back_root
+    400006: phoenix_lowpoly:ball_l
+    400008: phoenix_lowpoly:ball_r
+    400010: phoenix_lowpoly:beak
+    400012: phoenix_lowpoly:butt
+    400014: phoenix_lowpoly:crown
+    400016: phoenix_lowpoly:elbow_l
+    400018: phoenix_lowpoly:elbow_r
+    400020: phoenix_lowpoly:group
+    400022: phoenix_lowpoly:head
+    400024: phoenix_lowpoly:hip_l
+    400026: phoenix_lowpoly:hip_r
+    400028: phoenix_lowpoly:knee_l
+    400030: phoenix_lowpoly:knee_r
+    400032: phoenix_lowpoly:polySurface10
+    400034: phoenix_lowpoly:shoulder_l
+    400036: phoenix_lowpoly:shoulder_r
+    400038: phoenix_lowpoly:spine_high
+    400040: phoenix_lowpoly:spine_low
+    400042: phoenix_lowpoly:spine_mid
+    400044: phoenix_lowpoly:tail_end
+    400046: phoenix_lowpoly:tail_mid
+    400048: phoenix_lowpoly:tail_start
+    400050: phoenix_lowpoly:thumb_l
+    400052: phoenix_lowpoly:thumb_r
+    400054: phoenix_lowpoly:toe_l
+    400056: phoenix_lowpoly:toe_r
+    400058: phoenix_lowpoly:wrist_l
+    400060: phoenix_lowpoly:wrist_r
+    400062: //RootNode
+    2300000: phoenix_lowpoly:polySurface10
+    3300000: phoenix_lowpoly:polySurface10
+    4300000: phoenix_lowpoly:polySurface10
+    7400000: Take 001
+    9500000: //RootNode
+  materials:
+    importMaterials: 1
+    materialName: 0
+    materialSearch: 1
+  animations:
+    legacyGenerateAnimations: 4
+    bakeSimulation: 0
+    animationCompression: 1
+    animationRotationError: .5
+    animationPositionError: .5
+    animationScaleError: .5
+    animationWrapMode: 0
+    clipAnimations: []
+    isReadable: 1
+  meshes:
+    lODScreenPercentages: []
+    globalScale: .00999999978
+    meshCompression: 0
+    addColliders: 0
+    swapUVChannels: 0
+    generateSecondaryUV: 0
+    useFileUnits: 1
+    optimizeMeshForGPU: 1
+    secondaryUVAngleDistortion: 8
+    secondaryUVAreaDistortion: 15.000001
+    secondaryUVHardAngle: 88
+    secondaryUVPackMargin: 4
+  tangentSpace:
+    normalSmoothAngle: 60
+    splitTangentsAcrossUV: 1
+    normalImportMode: 0
+    tangentImportMode: 1
+  importAnimation: 1
+  copyAvatar: 0
+  humanDescription:
+    human: []
+    skeleton: []
+    handles: []
+    armTwist: .5
+    foreArmTwist: .5
+    upperLegTwist: .5
+    legTwist: .5
+    armStretch: .0500000007
+    legStretch: .0500000007
+    feetSpacing: 0
+    rootMotionBoneName: 
+  lastHumanDescriptionAvatarSource: {instanceID: 0}
+  additionalBone: 1
+  animationType: 2
+  userData: 
