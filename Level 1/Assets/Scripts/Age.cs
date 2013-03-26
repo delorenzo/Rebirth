@@ -7,7 +7,7 @@ public class Age : MonoBehaviour{
 	public GameObject[] Player = new GameObject[5];
 	public GameObject obj;
 	float timer;
-	Vector3 temp = new Vector3((float)0.0, (float)0.5, (float)0.0);
+	Vector3 temp = new Vector3((float)0.0, (float)1, (float)0.0);
 	
 
 

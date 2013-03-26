@@ -44,7 +44,11 @@
 	</Reference>
   </ItemGroup>
   <ItemGroup>
-     <Compile Include="Assets\3D Platformer Tutorial\Phoenix\Ability.cs" />
+     <Compile Include="Assets\Scripts\Ability.cs" />
+     <Compile Include="Assets\Scripts\Age.cs" />
+     <Compile Include="Assets\Scripts\Rebirth.cs" />
+     <Compile Include="Assets\Scripts\ThirdPersonController.cs" />
+     <Compile Include="Assets\Scripts\WaterCollision.cs" />
      <None Include="Assets\Standard Assets\Projectors\Guidelines.txt" />
      <None Include="Assets\Standard Assets (Mobile)\Shaders\Particle Shaders\Mobile Multiply Culled.shader" />
      <None Include="Assets\3D Platformer Tutorial\Textures\Glass\glass.shader" />
