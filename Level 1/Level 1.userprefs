@@ -1,11 +1,13 @@
 ﻿<Properties>
   <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
-  <MonoDevelop.Ide.Workbench ActiveDocument="Assets\Scripts\ThirdPersonController.cs">
+  <MonoDevelop.Ide.Workbench ActiveDocument="Assets\Scripts\Age.cs">
     <Files>
-      <File FileName="Assets\Scripts\ThirdPersonController.cs" Line="125" Column="3" />
-      <File FileName="Assets\Scripts\WaterCollision.cs" Line="14" Column="69" />
+      <File FileName="Assets\Scripts\ThirdPersonController.cs" Line="4" Column="51" />
+      <File FileName="Assets\Scripts\WaterCollision.cs" Line="1" Column="1" />
       <File FileName="Assets\Standard Assets\Character Controllers\Sources\Scripts\ThirdPersonController.js" Line="1" Column="1" />
       <File FileName="Assets\Standard Assets\Character Controllers\Sources\Scripts\CharacterMotor.js" Line="1" Column="1" />
+      <File FileName="Assets\Standard Assets\Character Controllers\Sources\Scripts\ThirdPersonCamera.js" Line="47" Column="37" />
+      <File FileName="Assets\Scripts\Age.cs" Line="17" Column="1" />
     </Files>
     <Pads>
       <Pad Id="ProjectPad">
@@ -13,7 +15,7 @@
           <Node name="Assembly-CSharp" expanded="True">
             <Node name="Assets" expanded="True">
               <Node name="Scripts" expanded="True">
-                <Node name="ThirdPersonController.cs" selected="True" />
+                <Node name="Age.cs" selected="True" />
               </Node>
             </Node>
           </Node>

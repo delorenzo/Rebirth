@@ -13,6 +13,8 @@ public var runMaxAnimationSpeed : float = 1.0;
 public var jumpAnimationSpeed : float = 1.15;
 public var landAnimationSpeed : float = 1.0;
 
+
+
 private var _animation : Animation;
 
 enum CharacterState {
@@ -66,6 +68,7 @@ private var collisionFlags : CollisionFlags;
 // Are we jumping? (Initiated with jump button and not grounded yet)
 private var jumping = false;
 private var jumpingReachedApex = false;
+private var bursting = false;
 
 // Are we moving backwards (This locks the camera to not do a 180 degree spin)
 private var movingBack = false;
@@ -190,19 +193,16 @@ function UpdateSmoothedMovementDirection ()
 		_characterState = CharacterState.Idle;
 		
 		// Pick speed modifier
-		if (Input.GetKey (KeyCode.LeftShift) || Input.GetKey (KeyCode.RightShift))
+		if (Input.GetKey ("e"))
 		
 		{
+			bursting = true;
 			targetSpeed *= runSpeed;
 			_characterState = CharacterState.Running;
 		}
-		else if (Time.time - trotAfterSeconds > walkTimeStart)
-		{
-			targetSpeed *= trotSpeed;
-			_characterState = CharacterState.Trotting;
-		}
 		else
 		{
+			bursting = false;
 			targetSpeed *= walkSpeed;
 			_characterState = CharacterState.Walking;
 		}
@@ -437,5 +437,10 @@ function IsGroundedWithTimeout ()
 function Reset ()
 {
 	gameObject.tag = "Player";
+}
+
+public function isBursting()
+{
+	return bursting;
 }
 

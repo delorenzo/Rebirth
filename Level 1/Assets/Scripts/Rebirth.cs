@@ -7,7 +7,7 @@ public class Rebirth : MonoBehaviour {
 
 	void Update () {
 		if (Input.GetKeyDown("r")) {
-			for (var i = 2; i < 5; i++) {
+			for (var i = 0; i < 5; i++) {
 				if (Player[i].activeSelf) { 
 					obj = Player[i];
 					obj.SetActive(false);

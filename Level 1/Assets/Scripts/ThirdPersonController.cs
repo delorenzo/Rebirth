@@ -1,9 +1,6 @@
-
-// Require a character controller to be attached to the same game object
-//@script RequireComponent(CharacterController)
-
 using UnityEngine;
 using System.Collections;
+[RequireComponent (typeof (CharacterController))]
 public class ThirdPersonController : MonoBehaviour {
 
 	//animations
@@ -16,7 +13,9 @@ public class ThirdPersonController : MonoBehaviour {
 	public float walkMaxAnimationSpeed = 0.75f;
 	public float runMaxAnimationSpeed = 1.0f;
 	public float jumpAnimationSpeed = 1.15f;
-
+	public float landAnimationSpeed = 1.0f;
+	public float rotateSpeed = 500.0f;
+	public float speedSmoothing = 10.0f;
 	private Animation _animation;
 
 	//character state
@@ -31,31 +30,31 @@ public class ThirdPersonController : MonoBehaviour {
 	CharacterState _characterState;
 
 	// The speed when walking
-	double walkSpeed = 2.0;
+	float walkSpeed = 2.0f;
 	// when pressing "E" button (cmd) we start running
-	double runSpeed = 12.0;
+	float runSpeed = 12.0f;
 
-	double inAirControlAcceleration = 3.0;
+	float inAirControlAcceleration = 3.0f;
 
 	// How high do we jump when pressing jump and letting go immediately
-	double jumpHeight = 0.5;
+	float jumpHeight = 0.5f;
 
 	//jumping stuff
-	double gravity = 20.0;
+	float gravity = 20.0f;
 	bool canJump = true;
-	private double jumpRepeatTime = 0.05;
-	private double jumpTimeout = 0.15;
-	private double groundedTimeout = 0.25;
+	private float jumpRepeatTime = 0.05f;
+	private float jumpTimeout = 0.15f;
+	private float groundedTimeout = 0.25f;
 
 	// The camera doesnt start following the target immediately but waits for a split second to avoid too much waving around.
-	private double lockCameraTimer = 0.0;
+	private float lockCameraTimer = 0.0f;
 
 	// The current move direction in x-z
 	private Vector3 moveDirection = Vector3.zero;
 	// The current vertical speed
-	private double verticalSpeed = 0.0;
+	private float verticalSpeed = 0.0f;
 	// The current x-z move speed
-	private double moveSpeed = 0.0;
+	private float moveSpeed = 0.0f;
 
 	// The last collision flags returned from controller.Move
 	private CollisionFlags collisionFlags; 
@@ -72,16 +71,16 @@ public class ThirdPersonController : MonoBehaviour {
 	// Is the user pressing any keys?
 	private bool isMoving = false;
 	// Last time the jump button was clicked down
-	private double lastJumpButtonTime = -10.0;
+	private float lastJumpButtonTime = -10.0f;
 	// Last time we performed a jump
-	private double lastJumpTime = -1.0;
+	private float lastJumpTime = -1.0f;
 
 	// the height we jumped from (Used to determine for how long to apply extra jump power after jumping.)
-	private double lastJumpStartHeight = 0.0;
+	private float lastJumpStartHeight = 0.0f;
 
 	private Vector3 inAirVelocity = Vector3.zero;
 
-	private double lastGroundedTime = 0.0;
+	private float lastGroundedTime = 0.0f;
 
 	private bool isControllable = true;
 
@@ -115,17 +114,17 @@ public class ThirdPersonController : MonoBehaviour {
 
 	void UpdateSmoothedMovementDirection ()
 	{
-		var cameraTransform = Camera.main.transform;
-		var grounded = IsGrounded();
+		Transform cameraTransform = Camera.main.transform;
+		bool grounded = IsGrounded();
 	
 		// Forward vector relative to the camera along the x-z plane	
-		var forward = cameraTransform.TransformDirection(Vector3.forward);
+		Vector3 forward = cameraTransform.TransformDirection(Vector3.forward);
 		forward.y = 0;
 		forward = forward.normalized;
 
 		// Right vector relative to the camera
 		// Always orthogonal to the forward vector
-		var right = Vector3(forward.z, 0, -forward.x);
+		Vector3 right = new Vector3(forward.z, 0, -forward.x);
 
 		var v = Input.GetAxisRaw("Vertical");
 		var h = Input.GetAxisRaw("Horizontal");
@@ -148,7 +147,7 @@ public class ThirdPersonController : MonoBehaviour {
 			// Lock camera for short period when transitioning moving & standing still
 			lockCameraTimer += Time.deltaTime;
 			if (isMoving != wasMoving) {
-				lockCameraTimer = 0.0;
+				lockCameraTimer = 0.0f;
 			}
 
 			// We store speed and direction seperately,
@@ -175,7 +174,7 @@ public class ThirdPersonController : MonoBehaviour {
 		
 			// Choose target speed
 			//* We want to support analog input but make sure you cant walk faster diagonally than just forward or sideways
-			var targetSpeed = Mathf.Min(targetDirection.magnitude, 1.0);
+			float targetSpeed = Mathf.Min(targetDirection.magnitude, 1.0f);
 	
 			_characterState = CharacterState.Idle;
 		
@@ -203,7 +202,7 @@ public class ThirdPersonController : MonoBehaviour {
 		{
 			// Lock camera while in air
 			if (jumping) {
-			lockCameraTimer = 0.0;
+			lockCameraTimer = 0.0f;
 			}
 
 			if (isMoving) {
@@ -224,7 +223,7 @@ public class ThirdPersonController : MonoBehaviour {
 			// - Only when pressing the button down
 			// - With a timeout so you can press the button slightly before landing		
 			if (canJump && Time.time < lastJumpButtonTime + jumpTimeout) {
-				verticalSpeed = CalculateJumpVerticalSpeed (jumpHeight);
+				verticalSpeed = CalculateJumpVerticalSpeed(jumpHeight);
 				SendMessage("DidJump", SendMessageOptions.DontRequireReceiver);
 			}
 		}
@@ -236,7 +235,7 @@ public class ThirdPersonController : MonoBehaviour {
 		if (isControllable)	// don't move player at all if not controllable.
 		{
 			// Apply gravity
-			var jumpButton = Input.GetButton("Jump");
+			//var jumpButton = Input.GetButton("Jump");
 		
 		
 			// When we reach the apex of the jump we send out a message
@@ -247,13 +246,13 @@ public class ThirdPersonController : MonoBehaviour {
 			}
 	
 			if (IsGrounded ())
-				verticalSpeed = 0.0;
+				verticalSpeed = 0.0f;
 			else
 				verticalSpeed -= gravity * Time.deltaTime;
 		}
 	}
 
-	void CalculateJumpVerticalSpeed (float TargetJumpHeight)
+	float CalculateJumpVerticalSpeed (float targetJumpHeight)
 	{
 		// From the jump height and gravity we deduce the upwards speed 
 		// for the character to reach at the apex.
@@ -295,11 +294,12 @@ public class ThirdPersonController : MonoBehaviour {
 		ApplyJumping ();
 	
 		// Calculate actual motion
-		var movement = moveDirection * moveSpeed + Vector3 (0, verticalSpeed, 0) + inAirVelocity;
+		Vector3 v = new Vector3(0, verticalSpeed, 0);
+		Vector3 movement = moveDirection * moveSpeed + v + inAirVelocity;
 		movement *= Time.deltaTime;
 	
 		// Move the controller
-		CharacterController controller = GetComponent(CharacterController);
+		CharacterController controller = GetComponent<CharacterController>();
 		collisionFlags = controller.Move(movement);
 	
 		// ANIMATION
@@ -323,13 +323,9 @@ public class ThirdPersonController : MonoBehaviour {
 				}
 				else 
 				{
-					if(_characterState == CharacterState.Running) {
+					if(_characterState == CharacterState.Bursting) {
 						_animation[runAnimation.name].speed = Mathf.Clamp(controller.velocity.magnitude, 0.0f, runMaxAnimationSpeed);
 						_animation.CrossFade(runAnimation.name);	
-					}
-					else if(_characterState == CharacterState.Trotting) {
-						_animation[walkAnimation.name].speed = Mathf.Clamp(controller.velocity.magnitude, 0.0f, trotMaxAnimationSpeed);
-						_animation.CrossFade(walkAnimation.name);	
 					}
 					else if(_characterState == CharacterState.Walking) {
 						_animation[walkAnimation.name].speed = Mathf.Clamp(controller.velocity.magnitude, 0.0f, walkMaxAnimationSpeed);
@@ -386,7 +382,7 @@ public class ThirdPersonController : MonoBehaviour {
 		return jumping;
 	}
 
-	bool isBursting () {
+	public bool isBursting () {
 		return bursting;
 	}
 
