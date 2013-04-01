@@ -9,7 +9,11 @@ public class FireCollision : MonoBehaviour {
 	public GameObject Bush1;
 	public GameObject Bush2;
 	public string obj;
+	public Vector3 origin;
 	float timer;
+	RaycastHit hit;
+	
+	/*
 	void OnParticleCollision(GameObject collision) {
 		obj = collision.transform.tag;
 		if (collision.transform.tag == "Bushes") {
@@ -43,4 +47,13 @@ public class FireCollision : MonoBehaviour {
 
 		}
 	}
+	
+	*/
+	
+	void Update() {
+		if (Physics.Raycast(origin, Vector3.forward, out hit)) {
+			
+		}
+	}
+	
 }

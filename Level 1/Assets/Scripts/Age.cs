@@ -32,9 +32,18 @@ public class Age : MonoBehaviour{
 
 	void Update() {
 		timer += Time.deltaTime;
-		if (timer > 10) { 
+		if (timer > 20) { 
 			timer = 0;
 			DoAge ();
+		}
+		else {
+			if (Input.GetKeyDown ("q")) {
+				timer = 0;
+				DoAge ();
+			}
+		}
+		if (Input.GetKeyDown ("r")) { 
+			timer = 0; 
 		}
 	}
 
