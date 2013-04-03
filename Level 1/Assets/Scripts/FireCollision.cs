@@ -52,7 +52,34 @@ public class FireCollision : MonoBehaviour {
 	
 	void Update() {
 		if (Physics.Raycast(origin, Vector3.forward, out hit)) {
-			
+			obj = hit.collider.name;
+			if (hit.collider.name == "BushCube1") {
+				Flames1.SetActive(true);
+				timer = 0;
+				while (timer < 3) {
+					timer += Time.deltaTime;
+				}
+				Destroy (Bush1);
+			}
+			else if (hit.collider.name == "BushCube2") {
+				Flames2.SetActive(true);
+				timer = 0;
+				while (timer < 3) {
+					timer += Time.deltaTime;
+				}
+				Destroy (Bush2);
+			}
+			else if (hit.collider.name == "ShadowFox") {
+				foxflames.SetActive(true);
+				timer = 0;
+				while (timer < 3) {
+					timer += Time.deltaTime;
+				}
+				Destroy (fox);
+			}
+			else {
+				
+			}
 		}
 	}
 	
