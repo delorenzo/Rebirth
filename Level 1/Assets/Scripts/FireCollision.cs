@@ -8,8 +8,8 @@ public class FireCollision : MonoBehaviour {
 	public GameObject foxflames;
 	public GameObject Bush1;
 	public GameObject Bush2;
+	public GameObject elder;
 	public string obj;
-	public Vector3 origin;
 	float timer;
 	RaycastHit hit;
 	
@@ -51,9 +51,9 @@ public class FireCollision : MonoBehaviour {
 	*/
 	
 	void Update() {
-		if (Physics.Raycast(origin, Vector3.forward, out hit)) {
+		if (Physics.Raycast(elder.transform.position, Vector3.forward, out hit)) {
 			obj = hit.collider.name;
-			if (hit.collider.name == "BushCube1") {
+			if (hit.collider.name == "Bush1") {
 				Flames1.SetActive(true);
 				timer = 0;
 				while (timer < 3) {
@@ -61,7 +61,7 @@ public class FireCollision : MonoBehaviour {
 				}
 				Destroy (Bush1);
 			}
-			else if (hit.collider.name == "BushCube2") {
+			else if (hit.collider.name == "Bush2") {
 				Flames2.SetActive(true);
 				timer = 0;
 				while (timer < 3) {

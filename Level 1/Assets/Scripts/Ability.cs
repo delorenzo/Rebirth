@@ -36,7 +36,7 @@ public class Ability : MonoBehaviour{
 				break;
 
 				case 4:  //elder
-				flame.renderer.enabled = true;
+				flame.SetActive(true);
 				break;
 			}
 		}
@@ -59,7 +59,7 @@ public class Ability : MonoBehaviour{
 				break;
 
 				case 4:  //elder
-				flame.renderer.enabled = false;
+				flame.SetActive (false);
 				break;
 			}
 		}
