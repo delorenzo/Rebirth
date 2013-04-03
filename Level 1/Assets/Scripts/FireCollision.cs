@@ -9,37 +9,26 @@ public class FireCollision : MonoBehaviour {
 	public GameObject Bush1;
 	public GameObject Bush2;
 	public GameObject elder;
-	public string obj;
-	float timer;
+	public GameObject obj;
 	RaycastHit hit;
 	
-	/*
+	
 	void OnParticleCollision(GameObject collision) {
-		obj = collision.transform.tag;
-		if (collision.transform.tag == "Bushes") {
+		obj = collision;
+		if (collision == Bush1) {
 			Flames1.SetActive(true);
-			timer = 0;
-			while (timer < 3) {
-				timer += Time.deltaTime;
-			}
+			StartCoroutine(wait());
 			Bush1.SetActive(false);
 		}
 
-		else if (collision.transform.tag == "Bushes") {
+		else if (collision == Bush2) {
 			Flames2.SetActive(true);
-			timer = 0;
-			while (timer < 3) {
-				timer += Time.deltaTime;
-			}
+			StartCoroutine(wait());
 			Bush2.SetActive(false);
 		}
 
-		else if (collision.transform.tag == "ShadowFox") {
-			foxflames.SetActive(true);
-			timer = 0;
-			while (timer < 3) {
-				timer += Time.deltaTime;
-			}
+		else if (collision == fox) {
+			StartCoroutine(wait());
 			fox.SetActive(false);
 		}
 
@@ -48,11 +37,14 @@ public class FireCollision : MonoBehaviour {
 		}
 	}
 	
-	*/
+	IEnumerator wait() {
+		yield return new WaitForSeconds(5);
+	}
 	
+	/*
 	void Update() {
 		if (Physics.Raycast(elder.transform.position, Vector3.forward, out hit)) {
-			obj = hit.collider.name;
+			
 			if (hit.collider.name == "Bush1") {
 				Flames1.SetActive(true);
 				timer = 0;
@@ -82,5 +74,6 @@ public class FireCollision : MonoBehaviour {
 			}
 		}
 	}
+	*/
 	
 }

@@ -7,6 +7,7 @@ public class Age : MonoBehaviour{
 	public GameObject[] Player = new GameObject[5];
 	public GameObject obj;
 	float timer;
+	Vector3 temp = new Vector3(0f, 0.2f, 0f);
 	
 
 
@@ -17,7 +18,7 @@ public class Age : MonoBehaviour{
 				obj = Player[i];
 				obj.SetActive(false);
 				nextindex = i % 4 + 1;
-				Player[nextindex].transform.position = Player[i].transform.position;
+				Player[nextindex].transform.position = Player[i].transform.position + temp;
 				Player[nextindex].SetActive(true);
 				break;
 			}
