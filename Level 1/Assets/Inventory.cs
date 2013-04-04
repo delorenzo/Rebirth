@@ -19,5 +19,13 @@ public class Inventory : MonoBehaviour {
 		return false;
 	}
 	
+	public void removeItem(string itemname) {
+		for (int j = 0; j < inventorySize; j++) {
+			if (inventory[j].name == itemname) { 
+				inventory[j] = null;
+				return;
+			}
+		}
+	}
 }
 
