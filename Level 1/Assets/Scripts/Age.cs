@@ -31,9 +31,19 @@ public class Age : MonoBehaviour{
 	}
 
 	void Update() {
-		if (Input.GetKeyDown("r")) {
-			burn.Play();
+		timer += Time.deltaTime;
+		if (timer > 20) { 
 			timer = 0;
+			DoAge ();
+		}
+
+		else if (Input.GetKeyDown ("q")) {
+			timer = 0;
+			DoAge ();
+		}
+		
+		else if (Input.GetKeyDown("r")) {
+			timer = 0; 
 			for (var i = 0; i < 5; i++) {
 				if (Player[i].activeSelf) { 
 					obj = Player[i];
@@ -42,17 +52,6 @@ public class Age : MonoBehaviour{
 					Player[1].SetActive(true);
 					break;
 				}
-			}
-		}
-		timer += Time.deltaTime;
-		if (timer > 20) { 
-			timer = 0;
-			DoAge ();
-		}
-		else {
-			if (Input.GetKeyDown ("q")) {
-				timer = 0;
-				DoAge ();
 			}
 		}
 	}

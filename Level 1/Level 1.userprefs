@@ -1,13 +1,15 @@
 ﻿<Properties>
   <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
-  <MonoDevelop.Ide.Workbench ActiveDocument="Assets\Scripts\Age.cs">
+  <MonoDevelop.Ide.Workbench ActiveDocument="Assets\Standard Assets\Character Controllers\Sources\Scripts\ThirdPersonController.js">
     <Files>
-      <File FileName="Assets\Inventory.cs" Line="20" Column="2" />
+      <File FileName="Assets\Standard Assets\Character Controllers\Sources\Scripts\ThirdPersonController.js" Line="290" Column="1" />
+      <File FileName="Assets\Scripts\Age.cs" Line="10" Column="36" />
+      <File FileName="Assets\Inventory.cs" Line="1" Column="1" />
       <File FileName="Assets\Scripts\FireCollision.cs" Line="1" Column="1" />
-      <File FileName="Assets\Scripts\Ability.cs" Line="10" Column="26" />
-      <File FileName="Assets\Scripts\Age.cs" Line="33" Column="17" />
+      <File FileName="Assets\Scripts\Ability.cs" Line="1" Column="1" />
       <File FileName="Assets\Scripts\WaterCollision.cs" Line="1" Column="1" />
-      <File FileName="Assets\Pickuppable.cs" Line="8" Column="29" />
+      <File FileName="Assets\Pickuppable.cs" Line="1" Column="1" />
+      <File FileName="Assets\Scripts\Rebirth.cs" Line="9" Column="2" />
     </Files>
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.DebuggingService.Breakpoints>
