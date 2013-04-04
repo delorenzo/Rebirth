@@ -9,6 +9,7 @@ public class Inventory : MonoBehaviour {
 	public void addItem(GameObject item) {
 		inventory[inventorySize] = item;
 		inventorySize++;
+		item.SetActive (false);
 	}
 	
 	public bool hasItem(string itemname) {
