@@ -13,8 +13,7 @@ public var runMaxAnimationSpeed : float = 1.0;
 public var jumpAnimationSpeed : float = 1.15;
 public var landAnimationSpeed : float = 1.0;
 
-
-
+public var Inventory;
 private var _animation : Animation;
 
 enum CharacterState {
@@ -443,4 +442,3 @@ public function isBursting()
 {
 	return bursting;
 }
-

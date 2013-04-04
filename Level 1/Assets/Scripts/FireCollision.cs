@@ -8,34 +8,25 @@ public class FireCollision : MonoBehaviour {
 	public GameObject foxflames;
 	public GameObject Bush1;
 	public GameObject Bush2;
-	public string obj;
-	float timer;
+	
+	
+	
 	void OnParticleCollision(GameObject collision) {
-		obj = collision.transform.tag;
-		if (collision.transform.tag == "Bushes") {
+		if (collision == Bush1) {
 			Flames1.SetActive(true);
-			timer = 0;
-			while (timer < 3) {
-				timer += Time.deltaTime;
-			}
+			StartCoroutine(wait(5.0F));
 			Bush1.SetActive(false);
 		}
 
-		else if (collision.transform.tag == "Bushes") {
+		else if (collision == Bush2) {
 			Flames2.SetActive(true);
-			timer = 0;
-			while (timer < 3) {
-				timer += Time.deltaTime;
-			}
+			StartCoroutine(wait(5.0F));
 			Bush2.SetActive(false);
 		}
 
-		else if (collision.transform.tag == "ShadowFox") {
+		else if (collision == fox) {
 			foxflames.SetActive(true);
-			timer = 0;
-			while (timer < 3) {
-				timer += Time.deltaTime;
-			}
+			StartCoroutine(wait(10.0F));
 			fox.SetActive(false);
 		}
 
@@ -43,4 +34,10 @@ public class FireCollision : MonoBehaviour {
 
 		}
 	}
+	
+	IEnumerator wait(float time) {
+		yield return new WaitForSeconds(time);
+	}
+	
+	
 }

@@ -5,6 +5,9 @@ public class Ability : MonoBehaviour{
 	public GameObject obj;
 	public int current_player;
 	public GameObject flame;
+	public AudioSource chirp;
+	public AudioSource flap;
+	public AudioSource burn;
 
 	void Start() {
 	}
@@ -26,6 +29,7 @@ public class Ability : MonoBehaviour{
 
 				case 1:  //chick
 				//the chick just chirps
+				chirp.Play();
 				break;
 
 				case 2:  //adolescent
@@ -33,10 +37,12 @@ public class Ability : MonoBehaviour{
 				break;
 
 				case 3: //adult
+				flap.Play();
 				break;
 
 				case 4:  //elder
-				flame.renderer.enabled = true;
+				flame.SetActive(true);
+				burn.Play();
 				break;
 			}
 		}
@@ -59,7 +65,7 @@ public class Ability : MonoBehaviour{
 				break;
 
 				case 4:  //elder
-				flame.renderer.enabled = false;
+				flame.SetActive (false);
 				break;
 			}
 		}
