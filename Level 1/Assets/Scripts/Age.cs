@@ -8,6 +8,7 @@ public class Age : MonoBehaviour{
 	public GameObject obj;
 	float timer;
 	Vector3 temp = new Vector3(0f, 0.2f, 0f);
+	public AudioSource burn;
 	
 
 
@@ -30,6 +31,19 @@ public class Age : MonoBehaviour{
 	}
 
 	void Update() {
+		if (Input.GetKeyDown("r")) {
+			burn.Play();
+			timer = 0;
+			for (var i = 0; i < 5; i++) {
+				if (Player[i].activeSelf) { 
+					obj = Player[i];
+					obj.SetActive(false);
+					Player[1].transform.position = Player[i].transform.position;
+					Player[1].SetActive(true);
+					break;
+				}
+			}
+		}
 		timer += Time.deltaTime;
 		if (timer > 20) { 
 			timer = 0;
@@ -40,9 +54,6 @@ public class Age : MonoBehaviour{
 				timer = 0;
 				DoAge ();
 			}
-		}
-		if (Input.GetKeyDown ("r")) { 
-			timer = 0; 
 		}
 	}
 

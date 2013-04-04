@@ -44,6 +44,8 @@
 	</Reference>
   </ItemGroup>
   <ItemGroup>
+     <Compile Include="Assets\Inventory.cs" />
+     <Compile Include="Assets\Pickuppable.cs" />
      <Compile Include="Assets\Scripts\Ability.cs" />
      <Compile Include="Assets\Scripts\Age.cs" />
      <Compile Include="Assets\Scripts\FireCollision.cs" />
