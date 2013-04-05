@@ -192,7 +192,7 @@ function UpdateSmoothedMovementDirection ()
 		_characterState = CharacterState.Idle;
 		
 		// Pick speed modifier
-		if (Input.GetKey ("e"))
+		if (Input.GetKey (KeyCode.LeftShift))
 		
 		{
 			bursting = true;
