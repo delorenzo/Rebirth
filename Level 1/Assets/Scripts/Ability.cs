@@ -18,10 +18,10 @@ public class Ability : MonoBehaviour{
 			if (Player[i].activeSelf) { 
 				current_player = i;
 				break;
-			}
+			}	
 		}
 
-		if (Input.GetKeyDown("e")) {
+		if (Input.GetKeyDown(KeyCode.LeftShift)) {
 			switch (current_player) {
 				case 0:  //egg
 				//the egg has no abilities
@@ -47,7 +47,7 @@ public class Ability : MonoBehaviour{
 			}
 		}
 
-		if (Input.GetKeyUp("e")) {
+		if (Input.GetKeyUp(KeyCode.LeftShift)) {
 			switch (current_player) {
 				case 0:  //egg
 				//the egg has no abilities
