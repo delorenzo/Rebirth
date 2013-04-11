@@ -10,7 +10,16 @@ public class Age : MonoBehaviour{
 	Vector3 temp = new Vector3(0f, 0.2f, 0f);
 	public AudioSource burn;
 	
-
+	public CameraController camera;
+	
+	public GameObject GetPlayer(){
+		for( int i = 0; i < 5; i++){
+			if(Player[i].activeSelf){
+				return Player[i];
+			}
+		}
+		return Player[0];
+	}
 
 	public void DoAge () {
 		int nextindex;
@@ -28,6 +37,7 @@ public class Age : MonoBehaviour{
 	
 	void Start() {
 		timer = 0; 	
+		camera = GetComponent<CameraController>();
 	}
 
 	void Update() {
