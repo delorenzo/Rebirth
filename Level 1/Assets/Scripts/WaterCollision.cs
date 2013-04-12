@@ -8,7 +8,7 @@ public class WaterCollision : MonoBehaviour {
 		if (collision.transform.tag == "Player") {
 			//check if adolescent 
 			if (Player[2].activeSelf) {
-				if (Input.GetKey("e")) {
+				if (Input.GetKey(KeyCode.LeftShift)) {
 					return;
 				}
 			}
