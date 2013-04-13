@@ -18,7 +18,7 @@
 	<DebugType>full</DebugType>
 	<Optimize>false</Optimize>
 	<OutputPath>Temp\bin\Debug\</OutputPath>
-	<DefineConstants>DEBUG;TRACE;UNITY_STANDALONE_WIN;ENABLE_MICROPHONE;ENABLE_IMAGEEFFECTS;ENABLE_WEBCAM;ENABLE_AUDIO_FMOD;UNITY_STANDALONE;ENABLE_NETWORK;ENABLE_MONO;ENABLE_PHYSICS;ENABLE_TERRAIN;ENABLE_CACHING;ENABLE_SUBSTANCE;ENABLE_GENERICS;ENABLE_CLOTH;ENABLE_MOVIES;ENABLE_AUDIO;ENABLE_WWW;ENABLE_SHADOWS;ENABLE_DUCK_TYPING;UNITY_4_1_0;UNITY_4_1;ENABLE_PROFILER;UNITY_EDITOR</DefineConstants>
+	<DefineConstants>DEBUG;TRACE;UNITY_STANDALONE;ENABLE_MICROPHONE;ENABLE_IMAGEEFFECTS;ENABLE_WEBCAM;ENABLE_AUDIO_FMOD;ENABLE_NETWORK;ENABLE_MONO;ENABLE_PHYSICS;ENABLE_TERRAIN;ENABLE_CACHING;ENABLE_SUBSTANCE;ENABLE_GENERICS;ENABLE_CLOTH;ENABLE_MOVIES;ENABLE_AUDIO;ENABLE_WWW;ENABLE_SHADOWS;ENABLE_DUCK_TYPING;UNITY_4_0_1;UNITY_4_0;UNITY_STANDALONE_WIN;ENABLE_PROFILER;UNITY_EDITOR</DefineConstants>
 	<ErrorReport>prompt</ErrorReport>
 	<WarningLevel>4</WarningLevel>
 	<NoWarn>0169</NoWarn>
@@ -92,60 +92,46 @@
      <None Include="Assets\Standard Assets (Mobile)\Shaders\Miscellaneous Shaders\Mobile Background.shader" />
      <None Include="Assets\Standard Assets\Projectors\Sources\Shaders\Projector Multiply.shader" />
      <None Include="Assets\Standard Assets (Mobile)\Shaders\Vertex Colored Shaders\Mobile Transparent Vertex Color.shader" />
-     <None Include="Assets\Objects And Textures\2a43b01c6989af95a1b0df03c1e60671\archibase.net.txt" />
-     <None Include="Assets\Objects And Textures\Stone_Pack_1_Obj\Stone_Pack_1_Obj\Stone_Pack_1.txt" />
-     <None Include="Assets\Objects And Textures\12a20535d32c7098404d260239a5c8f8\archibase.net.txt" />
+     <None Include="Assets\Objects And Textures\Objects And Textures\2a43b01c6989af95a1b0df03c1e60671\archibase.net.txt" />
+     <None Include="Assets\Objects And Textures\Objects And Textures\Stone_Pack_1_Obj\Stone_Pack_1_Obj\Stone_Pack_1.txt" />
+     <None Include="Assets\Objects And Textures\Objects And Textures\12a20535d32c7098404d260239a5c8f8\archibase.net.txt" />
      <None Include="Assets\3D Platformer Tutorial\Blob-Shadow\ShadowProjection.shader" />
-     <None Include="Assets\Objects And Textures\f8d801f8944c146d83b076dc9317d2dd\archibase.net.txt" />
+     <None Include="Assets\Objects And Textures\Objects And Textures\f8d801f8944c146d83b076dc9317d2dd\archibase.net.txt" />
      <None Include="Assets\Standard Assets\Tessellation Shaders\BumpedSpecularSmooth.shader" />
-     <None Include="Assets\Objects And Textures\c24df32936af1ab496071c9665dd8580\archibase.net.txt" />
+     <None Include="Assets\Objects And Textures\Objects And Textures\c24df32936af1ab496071c9665dd8580\archibase.net.txt" />
      <None Include="Assets\Standard Assets (Mobile)\Shaders\Miscellaneous Shaders\Mobile Detail.shader" />
      <None Include="Assets\Standard Assets\Particles\Sources\Shaders\Particle Alpha Blend (Queue +100).shader" />
-     <None Include="Assets\Objects And Textures\c9101d3b77d65dd6b1da70bb2d11d894\archibase.net.txt" />
-     <None Include="Assets\Objects And Textures\dfedaf6569f4ebbf7efcc7c3f246ee4e\archibase.net.txt" />
-     <None Include="Assets\Objects And Textures\vine1\textures.txt" />
+     <None Include="Assets\Objects And Textures\Objects And Textures\c9101d3b77d65dd6b1da70bb2d11d894\archibase.net.txt" />
+     <None Include="Assets\Objects And Textures\Objects And Textures\dfedaf6569f4ebbf7efcc7c3f246ee4e\archibase.net.txt" />
+     <None Include="Assets\Objects And Textures\Objects And Textures\vine1\textures.txt" />
      <None Include="Assets\Standard Assets\Skyboxes\_skybox info.txt" />
-     <None Include="Assets\Objects And Textures\b5ffd47d0bb4355f82658ae86aa2126a\archibase.net.txt" />
+     <None Include="Assets\Objects And Textures\Objects And Textures\b5ffd47d0bb4355f82658ae86aa2126a\archibase.net.txt" />
      <None Include="Assets\Standard Assets\Toon Shading\Sources\Shaders\Toony-BasicOutline.shader" />
-     <None Include="Assets\Objects And Textures\5fc4c26731f0ada571862856f7b506cb\archibase.net.txt" />
-     <None Include="Assets\Objects And Textures\afa240751cbb19eabda21dd90e3bee0c\archibase.net.txt" />
-     <None Include="Assets\Objects And Textures\2abe75e82d77acd817c44e3d3e5a9af8\archibase.net.txt" />
-     <None Include="Assets\Objects And Textures\Old_Key\www.chromesphere.com.txt" />
+     <None Include="Assets\Objects And Textures\Objects And Textures\5fc4c26731f0ada571862856f7b506cb\archibase.net.txt" />
+     <None Include="Assets\Objects And Textures\Objects And Textures\afa240751cbb19eabda21dd90e3bee0c\archibase.net.txt" />
+     <None Include="Assets\Objects And Textures\Objects And Textures\2abe75e82d77acd817c44e3d3e5a9af8\archibase.net.txt" />
+     <None Include="Assets\Objects And Textures\Objects And Textures\Old_Key\www.chromesphere.com.txt" />
      <None Include="Assets\Standard Assets\Projectors\Sources\Shaders\Projector Light.shader" />
      <None Include="Assets\Standard Assets\Water (Basic)\Sources\Shaders\FX-Water Simple.shader" />
      <None Include="Assets\Standard Assets (Mobile)\Shaders\Lightmap Shaders (Legacy)\Mobile Lightmap Reflective.shader" />
-     <None Include="Assets\Objects And Textures\Griffen Statue\archibase.net.txt" />
+     <None Include="Assets\Objects And Textures\Objects And Textures\Griffen Statue\archibase.net.txt" />
      <None Include="Assets\Standard Assets (Mobile)\Shaders\Particle Shaders\Mobile Particles Additive Culled.shader" />
      <None Include="Assets\Standard Assets\Toon Shading\Sources\Shaders\Toony-LightedOutline.shader" />
      <None Include="Assets\Standard Assets\Toon Shading\Sources\Shaders\Toony-Lighted.shader" />
-<<<<<<< HEAD
-     <None Include="Assets\Objects And Textures\a1c3d14cfd0e4cb22e267010dc8a7420\archibase.net.txt" />
-     <None Include="Assets\Objects And Textures\ef88b6542c99fab80b1397f42309926f\archibase.net.txt" />
-     <None Include="Assets\Objects And Textures\Flowers\archibase.net.txt" />
-     <None Include="Assets\Objects And Textures\f1701765b23a329b33f4af6620a3231b\archibase.net.txt" />
-=======
-<<<<<<< HEAD
-     <None Include="Assets\Objects And Textures\a1c3d14cfd0e4cb22e267010dc8a7420\archibase.net.txt" />
-     <None Include="Assets\Objects And Textures\f8d801f8944c146d83b076dc9317d2dd\ef88b6542c99fab80b1397f42309926f\archibase.net.txt" />
-     <None Include="Assets\Objects And Textures\Flowers\archibase.net.txt" />
-     <None Include="Assets\Objects And Textures\f1701765b23a329b33f4af6620a3231b\archibase.net.txt" />
-=======
      <None Include="Assets\Objects And Textures\Objects And Textures\a1c3d14cfd0e4cb22e267010dc8a7420\archibase.net.txt" />
      <None Include="Assets\Objects And Textures\Objects And Textures\ef88b6542c99fab80b1397f42309926f\archibase.net.txt" />
      <None Include="Assets\Objects And Textures\Objects And Textures\Flowers\archibase.net.txt" />
      <None Include="Assets\Objects And Textures\Objects And Textures\f1701765b23a329b33f4af6620a3231b\archibase.net.txt" />
->>>>>>> 7b56358c4cbf085632a2e04a1eb47c522be453fe
->>>>>>> fc3a6b8ec87049fe2767352436dc33dcef2fbe79
      <None Include="Assets\Standard Assets (Mobile)\Shaders\Vertex Colored Shaders\Mobile Vertex Colored.shader" />
-     <None Include="Assets\Objects And Textures\2f2ce567d476e024aa0075cbeea85764\2abe75e82d77acd817c44e3d3e5a9af8\archibase.net.txt" />
-     <None Include="Assets\Objects And Textures\0622e20f737503dd23e4d6fa0f33f273\archibase.net.txt" />
+     <None Include="Assets\Objects And Textures\Objects And Textures\2f2ce567d476e024aa0075cbeea85764\2abe75e82d77acd817c44e3d3e5a9af8\archibase.net.txt" />
+     <None Include="Assets\Objects And Textures\Objects And Textures\0622e20f737503dd23e4d6fa0f33f273\archibase.net.txt" />
      <None Include="Assets\Standard Assets (Mobile)\Shaders\Lightmap Shaders (Legacy)\Mobile Lightmap Only.shader" />
      <None Include="Assets\Standard Assets (Mobile)\Shaders\Lightmap Shaders (Legacy)\Mobile Lightmap AlphaTest.shader" />
-     <None Include="Assets\Objects And Textures\7dc90a59dd70ceb5d4fcc4cf25b2cfeb\archibase.net.txt" />
-     <None Include="Assets\Objects And Textures\f99aecd6da8094e9c4275395e34d0e8d\archibase.net.txt" />
+     <None Include="Assets\Objects And Textures\Objects And Textures\7dc90a59dd70ceb5d4fcc4cf25b2cfeb\archibase.net.txt" />
+     <None Include="Assets\Objects And Textures\Objects And Textures\f99aecd6da8094e9c4275395e34d0e8d\archibase.net.txt" />
      <None Include="Assets\Standard Assets\Tessellation Shaders\BumpedSpecularDisplacement.shader" />
-     <None Include="Assets\Objects And Textures\00f704a94dea1f71db4317a8889f798d\archibase.net.txt" />
-     <None Include="Assets\Objects And Textures\2f2ce567d476e024aa0075cbeea85764\archibase.net.txt" />
+     <None Include="Assets\Objects And Textures\Objects And Textures\00f704a94dea1f71db4317a8889f798d\archibase.net.txt" />
+     <None Include="Assets\Objects And Textures\Objects And Textures\2f2ce567d476e024aa0075cbeea85764\archibase.net.txt" />
  <Reference Include="Assembly-UnityScript-firstpass">
  <HintPath>Library\ScriptAssemblies\Assembly-UnityScript-firstpass.dll</HintPath>
  </Reference>
