@@ -8,7 +8,6 @@ public var runAnimation : AnimationClip;
 public var jumpPoseAnimation : AnimationClip;
 
 public var walkMaxAnimationSpeed : float = 0.75;
-public var trotMaxAnimationSpeed : float = 1.0;
 public var runMaxAnimationSpeed : float = 1.0;
 public var jumpAnimationSpeed : float = 1.15;
 public var landAnimationSpeed : float = 1.0;
@@ -19,7 +18,7 @@ private var _animation : Animation;
 enum CharacterState {
 	Idle = 0,
 	Walking = 1,
-	Trotting = 2,
+	Flying = 2,
 	Running = 3,
 	Jumping = 4,
 }
@@ -28,9 +27,7 @@ private var _characterState : CharacterState;
 
 // The speed when walking
 var walkSpeed = 2.0;
-// after trotAfterSeconds of walking we trot with trotSpeed
-var trotSpeed = 4.0;
-// when pressing "Fire3" button (cmd) we start running
+//when pressing "Shift" button as adolescent we run
 var runSpeed = 6.0;
 
 var inAirControlAcceleration = 3.0;
@@ -100,12 +97,13 @@ function Awake ()
 	if(!_animation)
 		Debug.Log("The character you would like to control doesn't have animations. Moving her might look weird.");
 	
-	/*
-public var idleAnimation : AnimationClip;
-public var walkAnimation : AnimationClip;
-public var runAnimation : AnimationClip;
-public var jumpPoseAnimation : AnimationClip;	
+	
+	public var idleAnimation : AnimationClip;
+	//public var walkAnimation : AnimationClip;
+	//public var runAnimation : AnimationClip;
+	//public var jumpPoseAnimation : AnimationClip;	
 	*/
+	/*
 	if(!idleAnimation) {
 		_animation = null;
 		Debug.Log("No idle animation found. Turning off animations.");
@@ -122,7 +120,7 @@ public var jumpPoseAnimation : AnimationClip;
 		_animation = null;
 		Debug.Log("No jump animation found and the character has canJump enabled. Turning off animations.");
 	}
-			
+	*/		
 }
 
 

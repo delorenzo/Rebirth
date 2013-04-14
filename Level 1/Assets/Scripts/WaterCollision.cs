@@ -3,16 +3,20 @@ using System.Collections;
 
 public class WaterCollision : MonoBehaviour {
 	public GameObject spawn;
-	public GameObject[] Player = new GameObject[5];
+	//public GameObject[] Player = new GameObject[5];
+	public GameObject [] Player;
+	void Start() {
+		spawn = GameObject.Find ("Spawn");
+	}
+
 	void OnParticleCollision(GameObject collision) {
 		if (collision.transform.tag == "Player") {
 			//check if adolescent 
-			if (Player[2].activeSelf) {
+			if (collision.gameObject.name == "PLP2") {
 				if (Input.GetKey(KeyCode.LeftShift)) {
 					return;
 				}
 			}
-
 			reset ();
 		}
 	}
@@ -38,4 +42,5 @@ public class WaterCollision : MonoBehaviour {
 				}
 			}
 	}
+	
 }
