@@ -44,19 +44,19 @@
 	</Reference>
   </ItemGroup>
   <ItemGroup>
-     <Compile Include="Assets\CameraController.cs" />
-     <Compile Include="Assets\Gate.cs" />
-     <Compile Include="Assets\Inventory.cs" />
-     <Compile Include="Assets\ItemCollision.cs" />
-     <Compile Include="Assets\Pickuppable.cs" />
+     <Compile Include="Assets\Objects And Textures\CameraController.cs" />
+     <Compile Include="Assets\Objects And Textures\Gate.cs" />
+     <Compile Include="Assets\Objects And Textures\Inventory.cs" />
+     <Compile Include="Assets\Objects And Textures\ItemCollision.cs" />
      <Compile Include="Assets\Scripts\Ability.cs" />
      <Compile Include="Assets\Scripts\Age.cs" />
      <Compile Include="Assets\Scripts\FireCollision.cs" />
+     <Compile Include="Assets\Scripts\Pickuppable.cs" />
      <Compile Include="Assets\Scripts\Rebirth.cs" />
+     <Compile Include="Assets\Scripts\StartMenuGUI.cs" />
+     <Compile Include="Assets\Scripts\Text.cs" />
      <Compile Include="Assets\Scripts\ThirdPersonController.cs" />
      <Compile Include="Assets\Scripts\WaterCollision.cs" />
-     <Compile Include="Assets\StartMenuGUI.cs" />
-     <Compile Include="Assets\Text.cs" />
      <None Include="Assets\Standard Assets\Projectors\Guidelines.txt" />
      <None Include="Assets\Standard Assets (Mobile)\Shaders\Particle Shaders\Mobile Multiply Culled.shader" />
      <None Include="Assets\3D Platformer Tutorial\Textures\Glass\glass.shader" />
