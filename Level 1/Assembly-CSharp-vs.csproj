@@ -50,7 +50,9 @@
      <Compile Include="Assets\Objects And Textures\ItemCollision.cs" />
      <Compile Include="Assets\Scripts\Ability.cs" />
      <Compile Include="Assets\Scripts\Age.cs" />
+     <Compile Include="Assets\Scripts\EndLevel1.cs" />
      <Compile Include="Assets\Scripts\FireCollision.cs" />
+     <Compile Include="Assets\Scripts\LevelGUI.cs" />
      <Compile Include="Assets\Scripts\Pickuppable.cs" />
      <Compile Include="Assets\Scripts\Rebirth.cs" />
      <Compile Include="Assets\Scripts\StartMenuGUI.cs" />
