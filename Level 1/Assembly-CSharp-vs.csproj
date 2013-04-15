@@ -55,6 +55,7 @@
      <Compile Include="Assets\Scripts\Rebirth.cs" />
      <Compile Include="Assets\Scripts\ThirdPersonController.cs" />
      <Compile Include="Assets\Scripts\WaterCollision.cs" />
+     <Compile Include="Assets\StartMenuGUI.cs" />
      <Compile Include="Assets\Text.cs" />
      <None Include="Assets\Standard Assets\Projectors\Guidelines.txt" />
      <None Include="Assets\Standard Assets (Mobile)\Shaders\Particle Shaders\Mobile Multiply Culled.shader" />
