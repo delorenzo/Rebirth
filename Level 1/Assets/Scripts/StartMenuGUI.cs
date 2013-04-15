@@ -6,6 +6,7 @@ public class StartMenuGUI : MonoBehaviour {
 	public Texture2D[] text;
 	bool isLoading;
 	int i;
+	public GUIStyle startStyle;
 	
 	// Use this for initialization
 	void Start () {

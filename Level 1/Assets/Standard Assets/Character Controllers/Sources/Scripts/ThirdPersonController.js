@@ -120,7 +120,7 @@ function Awake ()
 	}
 	if(!jumpPoseAnimation && canJump) {
 		_animation = null;
-		Debug.Log("No jump animation found and the character has canJump enabled. Turning off animations.");
+		//Debug.Log("No jump animation found and the character has canJump enabled. Turning off animations.");
 	}
 		
 }
