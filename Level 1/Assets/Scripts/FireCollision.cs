@@ -12,22 +12,16 @@ public class FireCollision : MonoBehaviour {
 	
 	
 	void OnParticleCollision(GameObject collision) {
-		if (collision == Bush1) {
-			Flames1.SetActive(true);
-			StartCoroutine(wait(5.0F));
-			Bush1.SetActive(false);
+		if (collision == Bush1 && (!(Flames1.activeSelf))) {
+			StartCoroutine(burn (Bush1, Flames1));
 		}
 
-		else if (collision == Bush2) {
-			Flames2.SetActive(true);
-			StartCoroutine(wait(5.0F));
-			Bush2.SetActive(false);
+		else if (collision == Bush2 && (!(Flames2.activeSelf))) {
+			StartCoroutine(burn (Bush2, Flames2));
 		}
 
-		else if (collision == fox) {
-			foxflames.SetActive(true);
-			StartCoroutine(wait(10.0F));
-			fox.SetActive(false);
+		else if (collision == fox && (!(foxflames.activeSelf))) {
+			StartCoroutine(burn (fox, foxflames));
 		}
 
 		else {
@@ -35,8 +29,11 @@ public class FireCollision : MonoBehaviour {
 		}
 	}
 	
-	IEnumerator wait(float time) {
-		yield return new WaitForSeconds(time);
+	
+	IEnumerator burn(GameObject obj, GameObject flames) {
+		flames.SetActive (true);
+		yield return new WaitForSeconds(2);
+		obj.SetActive (false);
 	}
 	
 	

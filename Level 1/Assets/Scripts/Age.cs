@@ -6,11 +6,11 @@ public class Age : MonoBehaviour{
 	/// The game object to affect. If none, the trigger work on this game object
 	public GameObject[] Player = new GameObject[5];
 	public GameObject obj;
-	float timer;
+	//float timer;
 	Vector3 temp = new Vector3(0f, 0.2f, 0f);
 	public AudioSource burn;
 	
-	public CameraController camera;
+	//public CameraController camera;
 	
 	public GameObject GetPlayer(){
 		for( int i = 0; i < 5; i++){
@@ -36,24 +36,26 @@ public class Age : MonoBehaviour{
 	}
 	
 	void Start() {
-		timer = 0; 	
-		camera = GetComponent<CameraController>();
+		//timer = 0; 	
+		//camera = GetComponent<CameraController>();
 	}
 
 	void Update() {
+		/*
 		timer += Time.deltaTime;
 		if (timer > 20) { 
 			timer = 0;
 			DoAge ();
 		}
+		*/
 
-		else if (Input.GetKeyDown ("q")) {
-			timer = 0;
+		if (Input.GetKeyDown ("q")) {
+			//timer = 0;
 			DoAge ();
 		}
 		
 		else if (Input.GetKeyDown("r")) {
-			timer = 0; 
+			//timer = 0; 
 			for (var i = 0; i < 5; i++) {
 				if (Player[i].activeSelf) { 
 					obj = Player[i];

@@ -21,7 +21,7 @@ public class Ability : MonoBehaviour{
 			}	
 		}
 
-		if (Input.GetKeyDown(KeyCode.LeftShift)) {
+		if (Input.GetKeyDown(KeyCode.LeftShift) || Input.GetKeyDown(KeyCode.RightShift)) {
 			switch (current_player) {
 				case 0:  //egg
 				//the egg has no abilities
@@ -47,7 +47,7 @@ public class Ability : MonoBehaviour{
 			}
 		}
 
-		if (Input.GetKeyUp(KeyCode.LeftShift)) {
+		if (Input.GetKeyUp(KeyCode.LeftShift) || Input.GetKeyUp (KeyCode.RightShift)) {
 			switch (current_player) {
 				case 0:  //egg
 				//the egg has no abilities
