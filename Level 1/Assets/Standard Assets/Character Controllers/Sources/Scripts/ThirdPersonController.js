@@ -2,6 +2,8 @@
 // Require a character controller to be attached to the same game object
 @script RequireComponent(CharacterController)
 
+public var adult : GameObject;
+public var adolescent : GameObject;
 public var idleAnimation : AnimationClip;
 public var walkAnimation : AnimationClip;
 public var runAnimation : AnimationClip;
@@ -23,6 +25,7 @@ enum CharacterState {
 	Jumping = 4,
 }
 
+
 private var _characterState : CharacterState;
 
 // The speed when walking
@@ -40,9 +43,10 @@ var gravity = 20.0;
 // The gravity in controlled descent mode
 var speedSmoothing = 10.0;
 var rotateSpeed = 500.0;
-var trotAfterSeconds = 3.0;
 
 var canJump = true;
+
+var countFlight = 0;
 
 private var jumpRepeatTime = 0.05;
 private var jumpTimeout = 0.15;
@@ -70,8 +74,6 @@ private var bursting = false;
 private var movingBack = false;
 // Is the user pressing any keys?
 private var isMoving = false;
-// When did the user start walking (Used for going into trot after a while)
-private var walkTimeStart = 0.0;
 // Last time the jump button was clicked down
 private var lastJumpButtonTime = -10.0;
 // Last time we performed a jump
@@ -97,13 +99,13 @@ function Awake ()
 	if(!_animation)
 		Debug.Log("The character you would like to control doesn't have animations. Moving her might look weird.");
 	
-	
+	/*
 	public var idleAnimation : AnimationClip;
 	//public var walkAnimation : AnimationClip;
 	//public var runAnimation : AnimationClip;
 	//public var jumpPoseAnimation : AnimationClip;	
 	*/
-	/*
+	
 	if(!idleAnimation) {
 		_animation = null;
 		Debug.Log("No idle animation found. Turning off animations.");
@@ -120,7 +122,14 @@ function Awake ()
 		_animation = null;
 		Debug.Log("No jump animation found and the character has canJump enabled. Turning off animations.");
 	}
-	*/		
+		
+}
+
+function resetMoveSpeed() {
+	moveDirection = Vector3.zero;
+	moveSpeed = 0.0;
+	verticalSpeed = 0.0;
+	inAirVelocity = Vector3.zero;
 }
 
 
@@ -156,6 +165,8 @@ function UpdateSmoothedMovementDirection ()
 	// Grounded controls
 	if (grounded)
 	{
+		countFlight = 0; //flight count resets when phoenix hits ground
+		
 		// Lock camera for short period when transitioning moving & standing still
 		lockCameraTimer += Time.deltaTime;
 		if (isMoving != wasMoving)
@@ -190,7 +201,7 @@ function UpdateSmoothedMovementDirection ()
 		_characterState = CharacterState.Idle;
 		
 		// Pick speed modifier
-		if (Input.GetKey (KeyCode.LeftShift))
+		if (Input.GetKey (KeyCode.LeftShift) && adolescent.activeSelf)
 		
 		{
 			bursting = true;
@@ -243,6 +254,15 @@ function ApplyJumping ()
 	}
 }
 
+function ApplyFlying()
+{
+	if (countFlight < 3) {
+		verticalSpeed = CalculateJumpVerticalSpeed (jumpHeight);
+		countFlight++;
+	}
+
+}
+
 
 function ApplyGravity ()
 {
@@ -250,6 +270,8 @@ function ApplyGravity ()
 	{
 		// Apply gravity
 		var jumpButton = Input.GetButton("Jump");
+		
+		
 		
 		
 		// When we reach the apex of the jump we send out a message
@@ -286,6 +308,10 @@ function DidJump ()
 
 function Update() {
 	
+	if (Input.GetKeyDown("q")) {
+		resetMoveSpeed();
+	}
+	
 	if (!isControllable)
 	{
 		// kill all inputs if not controllable.
@@ -306,6 +332,10 @@ function Update() {
 
 	// Apply jumping logic
 	ApplyJumping ();
+	
+	if ((Input.GetKeyDown(KeyCode.LeftShift) || Input.GetKeyDown(KeyCode.RightShift)) && adult.activeSelf) {
+		ApplyFlying();
+	}
 	
 	// Calculate actual motion
 	var movement = moveDirection * moveSpeed + Vector3 (0, verticalSpeed, 0) + inAirVelocity;
@@ -339,10 +369,6 @@ function Update() {
 				if(_characterState == CharacterState.Running) {
 					_animation[runAnimation.name].speed = Mathf.Clamp(controller.velocity.magnitude, 0.0, runMaxAnimationSpeed);
 					_animation.CrossFade(runAnimation.name);	
-				}
-				else if(_characterState == CharacterState.Trotting) {
-					_animation[walkAnimation.name].speed = Mathf.Clamp(controller.velocity.magnitude, 0.0, trotMaxAnimationSpeed);
-					_animation.CrossFade(walkAnimation.name);	
 				}
 				else if(_characterState == CharacterState.Walking) {
 					_animation[walkAnimation.name].speed = Mathf.Clamp(controller.velocity.magnitude, 0.0, walkMaxAnimationSpeed);
