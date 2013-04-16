@@ -36,16 +36,15 @@ var levelStateMachine : LevelStatus;
 
 function Start ()
 {
-	levelStateMachine = GameObject.Find("/Level").GetComponent(LevelStatus);
-
-	if (!levelStateMachine)
-	{
-		Debug.Log("EnemyPoliceGuy: ERROR! NO LEVEL STATUS SCRIPT FOUND.");
-	}
+	//levelStateMachine = GameObject.Find("/Level").GetComponent(LevelStatus);
+	//if (!levelStateMachine)
+	//{
+	//	Debug.Log("EnemyPoliceGuy: ERROR! NO LEVEL STATUS SCRIPT FOUND.");
+	//}
 
 	if (!target)
 		target = GameObject.FindWithTag("Player").transform;
-	
+	/*
 	animation.wrapMode = WrapMode.Loop;
 
 	// Setup animations
@@ -57,7 +56,7 @@ function Start ()
 	
 	// initialize audio clip. Make sure it's set to the "idle" sound.
 	audio.clip = idleSound;
-	
+	*/
 	yield WaitForSeconds(Random.value);
 	
 	// Just attack for now

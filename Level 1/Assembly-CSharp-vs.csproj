@@ -52,6 +52,7 @@
      <Compile Include="Assets\Scripts\Age.cs" />
      <Compile Include="Assets\Scripts\EndLevel1.cs" />
      <Compile Include="Assets\Scripts\FireCollision.cs" />
+     <Compile Include="Assets\Scripts\FoxAI.cs" />
      <Compile Include="Assets\Scripts\LevelGUI.cs" />
      <Compile Include="Assets\Scripts\PauseGUI.cs" />
      <Compile Include="Assets\Scripts\Pickuppable.cs" />
