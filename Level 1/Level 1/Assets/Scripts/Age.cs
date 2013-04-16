@@ -8,7 +8,6 @@ public class Age : MonoBehaviour{
 	public GameObject obj;
 	//float timer;
 	Vector3 temp = new Vector3(0f, 0.2f, 0f);
-	public AudioSource burn;
 	
 	//public CameraController camera;
 	
@@ -65,6 +64,7 @@ public class Age : MonoBehaviour{
 		
 		else if (Input.GetKeyDown("r")) {
 			//timer = 0; 
+			
 			for (var i = 0; i < 5; i++) {
 				if (Player[i].activeSelf) { 
 					obj = Player[i];
