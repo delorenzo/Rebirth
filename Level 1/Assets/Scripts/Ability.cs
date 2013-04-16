@@ -8,6 +8,7 @@ public class Ability : MonoBehaviour{
 	public AudioSource chirp;
 	public AudioSource flap;
 	public AudioSource burn;
+	public AudioSource burst;
 
 	void Start() {
 	}
@@ -34,6 +35,7 @@ public class Ability : MonoBehaviour{
 
 				case 2:  //adolescent
 				//the adolescent bursts forward
+				burst.Play();
 				break;
 
 				case 3: //adult
