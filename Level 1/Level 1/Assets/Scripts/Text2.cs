@@ -16,9 +16,11 @@ public class Text2 : MonoBehaviour {
 	public Text text;
 	public Text2 text2;
 	public Text2 text3;
+	public Text2 text4;
+	public Text2 text5;
 	
-	void OnTriggerEnter(){
-		if(text.on != 1 && text2.on != 1 && text3.on != 1){
+	public void OnTriggerEnter(){
+		if(text.on != 1 && text2.on != 1 && text3.on != 1 && text4.on != 1 && text5.on != 1){
 			start = 1;
 			on = 1;
 		}
@@ -26,13 +28,15 @@ public class Text2 : MonoBehaviour {
 			text.Off(); 
 			text2.Off ();
 			text3.Off ();
+			text4.Off ();
+			text5.Off();
 			start = 1;
 			on = 1;
 			starttext = 0;
 		}
 	}
 	
-	void OnGUI(){
+	public void OnGUI(){
 		if(start == 1){
 			Timer ();
 			
