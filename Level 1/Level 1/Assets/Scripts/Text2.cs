@@ -1,8 +1,8 @@
 using UnityEngine;
 using System.Collections;
 
-public class Text : MonoBehaviour {
-	public string [] words = new string[6];
+public class Text2 : MonoBehaviour {
+	public string [] words = new string[1];
 	string got;
 	int width = Screen.width;
 	int height = Screen.height;
@@ -11,9 +11,9 @@ public class Text : MonoBehaviour {
 	int starttext = 0;
 	int begin = 0;
 	int prevtext = 0;
-	int start = 1;
+	int start = 0;
 	public int on = 0;
-	public Text2 text;
+	public Text text;
 	public Text2 text2;
 	public Text2 text3;
 	
@@ -28,6 +28,7 @@ public class Text : MonoBehaviour {
 			text3.Off ();
 			start = 1;
 			on = 1;
+			starttext = 0;
 		}
 	}
 	
@@ -55,12 +56,12 @@ public class Text : MonoBehaviour {
 			on = 0;
 			starttext = 0;
 		}
-		OnGUI ();
+		OnGUI();
 	}
 	
 	void Timer(){
 		timer += Time.deltaTime;
-		if(timer > 15 && starttext != 0 && starttext != -1){
+		if(timer > 15){
 			starttext++;
 			timer = 0;
 		}
@@ -80,5 +81,6 @@ public class Text : MonoBehaviour {
 		OnGUI();
 	}
 	
+
 	
 }

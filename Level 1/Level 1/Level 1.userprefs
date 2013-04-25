@@ -1,18 +1,22 @@
 ﻿<Properties>
   <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
-  <MonoDevelop.Ide.Workbench ActiveDocument="Assets\Scripts\Age.cs">
+  <MonoDevelop.Ide.Workbench ActiveDocument="Assets\Scripts\Text2.cs">
     <Files>
-      <File FileName="Assets\Scripts\Text.cs" Line="67" Column="16" />
+      <File FileName="Assets\Scripts\Text2.cs" Line="31" Column="18" />
+      <File FileName="Assets\Scripts\Ability.cs" Line="1" Column="1" />
+      <File FileName="Assets\Scripts\StartMenuGUI.cs" Line="1" Column="1" />
+      <File FileName="Assets\Scripts\Text.cs" Line="18" Column="21" />
       <File FileName="Assets\Scripts\LevelGUI.cs" Line="1" Column="1" />
       <File FileName="Assets\Scripts\EndLevel1.cs" Line="1" Column="1" />
       <File FileName="Assets\Scripts\WaterCollision.cs" Line="1" Column="1" />
       <File FileName="Assets\Objects And Textures\Gate.cs" Line="1" Column="1" />
       <File FileName="Assets\Scripts\FireCollision.cs" Line="1" Column="1" />
       <File FileName="Assets\Objects And Textures\Inventory.cs" Line="1" Column="1" />
-      <File FileName="Assets\Scripts\Rebirth.cs" Line="9" Column="7" />
-      <File FileName="Assets\Scripts\Age.cs" Line="32" Column="1" />
+      <File FileName="Assets\Scripts\Rebirth.cs" Line="1" Column="1" />
+      <File FileName="Assets\Scripts\Age.cs" Line="1" Column="1" />
+      <File FileName="Assets\Scripts\Pickuppable.cs" Line="1" Column="1" />
+      <File FileName="Assets\Objects And Textures\CameraController.cs" Line="1" Column="1" />
       <File FileName="Assets\Standard Assets\Character Controllers\Sources\Scripts\ThirdPersonCamera.js" Line="1" Column="1" />
-      <File FileName="Assets\Scripts\Pickuppable.cs" Line="5" Column="1" />
     </Files>
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.DebuggingService.Breakpoints>

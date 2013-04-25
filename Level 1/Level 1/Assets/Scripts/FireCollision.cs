@@ -8,6 +8,7 @@ public class FireCollision : MonoBehaviour {
 	public GameObject foxflames;
 	public GameObject Bush1;
 	public GameObject Bush2;
+	public GameObject Bush3;
 	
 	
 	void OnParticleCollision(GameObject collision) {
@@ -17,6 +18,9 @@ public class FireCollision : MonoBehaviour {
 
 		else if (collision == Bush2) {
 			StartCoroutine(burn (Bush2, Flames2));
+		}
+		else if (collision == Bush3) {
+			StartCoroutine(burn (Bush3, Flames2));
 		}
 
 		else if (collision == fox) {

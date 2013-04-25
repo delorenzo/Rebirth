@@ -50,6 +50,7 @@
      <Compile Include="Assets\Objects And Textures\ItemCollision.cs" />
      <Compile Include="Assets\Scripts\Ability.cs" />
      <Compile Include="Assets\Scripts\Age.cs" />
+     <Compile Include="Assets\Scripts\CameraCollider.cs" />
      <Compile Include="Assets\Scripts\EndLevel1.cs" />
      <Compile Include="Assets\Scripts\FireCollision.cs" />
      <Compile Include="Assets\Scripts\LevelGUI.cs" />
@@ -58,6 +59,7 @@
      <Compile Include="Assets\Scripts\Rebirth.cs" />
      <Compile Include="Assets\Scripts\StartMenuGUI.cs" />
      <Compile Include="Assets\Scripts\Text.cs" />
+     <Compile Include="Assets\Scripts\Text2.cs" />
      <Compile Include="Assets\Scripts\ThirdPersonController.cs" />
      <Compile Include="Assets\Scripts\WaterCollision.cs" />
      <None Include="Assets\Standard Assets\Projectors\Guidelines.txt" />

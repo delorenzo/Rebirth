@@ -30,11 +30,20 @@ public class LevelGUI : MonoBehaviour {
 		}
 	}
 	
-	void OnGUI() {
+	void Update() {
 		if (Input.GetKeyDown ("p")) {
-			if (pause) { pause = false;}
-			else { pause = true;}
+			if (pause) { 
+				pause = false;
+				Time.timeScale = 1;
+			}
+			else { 
+				pause = true;
+				Time.timeScale = 0;
+			}
 		}
+	}
+	
+	void OnGUI() {
 		if (pause) {
 			GUI.Label (new Rect( Screen.width/2-200, 30, 400, 70),     "PAUSED", Title); 
 			GUI.Label(new Rect(300, 200, 1000, 500), keyboard);

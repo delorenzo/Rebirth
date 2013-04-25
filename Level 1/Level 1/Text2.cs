@@ -11,28 +11,17 @@ public class Text : MonoBehaviour {
 	int starttext = 0;
 	int begin = 0;
 	int prevtext = 0;
-	int start = 1;
-	public int on = 0;
-	public Text2 text;
-	public Text2 text2;
-	public Text2 text3;
+	int start = 0;
 	
 	void OnTriggerEnter(){
-		if(text.on != 1 && text2.on != 1 && text3.on != 1){
-			start = 1;
-			on = 1;
-		}
-		else{
-			text.Off(); 
-			text2.Off ();
-			text3.Off ();
-			start = 1;
-			on = 1;
-		}
+		start = 1;
 	}
 	
 	void OnGUI(){
 		if(start == 1){
+			if(begin == 0){
+				SetUp ();
+			}
 			Timer ();
 			
 			if(starttext < words.Length && starttext > -1){
@@ -44,18 +33,17 @@ public class Text : MonoBehaviour {
 	
 	void Update(){
 		if(Input.GetKeyDown ("f")){
-			if(starttext != 9){
+			if(starttext != 9 && starttext != 6 && starttext != 8){
 				starttext +=1;
 				timer = 0;
+				OnGUI ();
 			}
 		}
 		
-		if(starttext > words.Length){
+		if(starttext > 5){
 			start = 0;
-			on = 0;
 			starttext = 0;
 		}
-		OnGUI ();
 	}
 	
 	void Timer(){
@@ -65,19 +53,16 @@ public class Text : MonoBehaviour {
 			timer = 0;
 		}
 		
-		if(starttext > words.Length){
+		if(starttext > 5){
 			start = 0;
-			on = 0;
 			starttext = 0;
 		}
 		
 	}
 	
-	public void Off(){
-		start = 0;
-		on = 0;
-		starttext= 0;
-		OnGUI();
+	void SetUp(){
+		words[0] = "The small chick is small and cute. It can get through small obstacles. Use this form to cross the bridge.";
+		begin++;
 	}
 	
 	
